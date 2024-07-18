@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+/* * {
   text-decoration: none;
-}
+} */
 
 @layer utilities {
   .shadow-top {

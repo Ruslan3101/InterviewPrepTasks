@@ -21,7 +21,7 @@ const Tasks: React.FC = () => {
       "Weather",
       "Carousel",
       "Shopping Cart",
-      "Hooks",
+      "LocalStorage Hook",
       "Context API",
       "Error Boundaries",
       "Fragments",

@@ -18,7 +18,7 @@ export default function TaskFix() {
     <div>
       <h1>Fix {task}</h1>
       <p>Details and functionality to fix {task}.</p>
-      {validateTask() ? <TaskComponent /> : "No task found "}
+      {validateTask() ? <TaskComponent /> : <p>Task component not found</p>}
     </div>
   );
 }
