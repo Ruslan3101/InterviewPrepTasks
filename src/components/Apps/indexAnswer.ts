@@ -4,7 +4,7 @@ import TodoList from "./react/todoList/answer/TodoList";
 
 type ComponentMap = Record<string, React.ComponentType<any>>;
 export const answerComponents: ComponentMap = {
-  axios: AnswerAxiosRealExample,
+  "data fetch axios api": AnswerAxiosRealExample,
   counter: Counter,
   todolist: TodoList,
 };

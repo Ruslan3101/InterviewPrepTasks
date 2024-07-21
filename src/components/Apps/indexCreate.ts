@@ -3,6 +3,6 @@ import CreateAxiosRealExample from "./react/fetch/axios/create/CreateAxiosRealEx
 
 type ComponentMap = Record<string, React.ComponentType<any>>;
 export const createComponents: ComponentMap = {
-  axios: CreateAxiosRealExample,
+  "data fetch axios api": CreateAxiosRealExample,
   counter: Counter,
 };
