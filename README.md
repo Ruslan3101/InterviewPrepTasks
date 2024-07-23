@@ -62,6 +62,7 @@ You will also see any lint errors in the console.
 ## Contributing
 
 If you would like to contribute to this project, please fork the repository and submit a pull request.
+[Commits must be done by following these rules](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/)
 
 ## Learn More
 
