@@ -15,7 +15,7 @@ export default function TaskAnswer() {
 
   return (
     <div>
-      <h1 className="text-xl mb-3 font-bold">Answer to {task} task</h1>
+      <h1 className="text-xl mb-3 font-bold text-gray-600 ">An answer to {task} task</h1>
 
       {validateTask() ? <TaskComponent /> : <p>Task component not found.</p>}
     </div>

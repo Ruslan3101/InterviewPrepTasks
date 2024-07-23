@@ -16,8 +16,8 @@ export default function TaskFix() {
   const TaskComponent = fixComponents[task?.toLowerCase() || ""];
   return (
     <div>
-      <h1>Fix {task}</h1>
-      <p>Details and functionality to fix {task}.</p>
+      <h1 className="text-xl mb-3 font-bold text-gray-600 ">Fix {task} task</h1>
+
       {validateTask() ? <TaskComponent /> : <p>Task component not found</p>}
     </div>
   );
