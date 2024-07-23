@@ -9,12 +9,13 @@ Always pull a new version of the app
 
 ## Features
 
-React: A JavaScript library for building user interfaces.
-React Router: For handling routing in the application.
-Axios: For making HTTP requests.
-TypeScript: For static type checking.
-Tailwind CSS: For utility-first CSS styling.
-Jest and Testing Library: For testing components and ensuring code quality.
+- **React**: A JavaScript library for building user interfaces.
+- **React Router**: For handling routing in the application.
+- **Axios**: For making HTTP requests.
+- **TypeScript**: For static type checking.
+- **Tailwind CSS**: For utility-first CSS styling.
+- **Jest and Testing Library**: For testing components and ensuring code quality.
+
 
 ## How to Work with This App
 
