@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import ProductDetails from "./ProductDetails";
 
-const AnswerAxiosRealExample = () => {
+const AxiosAPI = () => {
   const [products, setProducts] = useState([]);
 
   const getProducts = async () => {
@@ -23,13 +23,15 @@ const AnswerAxiosRealExample = () => {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App container mx-auto p-4">
       {products.length === 0 ? (
-        <div>No product data available.</div>
+        <div className="text-center text-gray-500">
+          No product data available.
+        </div>
       ) : (
-        <ul>
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {products.map((product) => (
-            <li key={product.id}>
+            <li key={product.id} className="border p-4 rounded-lg shadow-lg">
               <ProductDetails product={product} />
             </li>
           ))}
@@ -39,4 +41,4 @@ const AnswerAxiosRealExample = () => {
   );
 };
 
-export default AnswerAxiosRealExample;
+export default AxiosAPI;

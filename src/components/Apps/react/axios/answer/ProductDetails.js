@@ -1,4 +1,3 @@
-
 function ProductDetails({ product }) {
   if (!product || !product.name) {
     console.log(product);
