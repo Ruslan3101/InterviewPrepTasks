@@ -11,7 +11,7 @@ export default function TaskAnswer() {
   };
 
   const TaskComponent = answerComponents[task?.toLowerCase() || ""];
-  console.log("Task Component", TaskComponent);
+
 
   return (
     <div>

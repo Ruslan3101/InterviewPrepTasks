@@ -55,10 +55,7 @@ const TodoList = () => {
           placeholder="Enter Task"
           className="box-border h-3 w-50 p-4 border-2 rounded mr-2"
         />
-        <button
-          type="submit"
-          className="border p-1 drop-shadow-md bg-[#3ab7bf] text-white rounded"
-        >
+        <button type="submit" className="button-blue">
           Add task
         </button>
       </form>

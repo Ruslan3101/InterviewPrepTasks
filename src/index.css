@@ -13,10 +13,10 @@
 }
 
 /* src/styles.css */
-.button-red {
-  @apply border border-solid rounded p-1 shadow-sm bg-red-700 text-white ml-2 w-20 transition duration-300 ease-in-out;
+.button-blue {
+  @apply border p-1 drop-shadow-md bg-blue-400 text-white rounded transition duration-300 ease-in-out;
 }
 
-.button-red:hover {
-  @apply bg-red-900;
+.button-blue:hover {
+  @apply hover:bg-blue-600;
 }

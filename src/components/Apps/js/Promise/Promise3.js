@@ -25,7 +25,7 @@ function Promise3() {
   return (
     <div className="">
       <div className=" ">
-        <button className="button-red" onClick={callPromise3}>
+        <button className="button-blue" onClick={callPromise3}>
           Check Promise3
         </button>
       </div>

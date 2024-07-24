@@ -20,7 +20,7 @@ function Promise1() {
     <div className=" flex flex-col">
       <div className=" ">
         <button
-         className="button-red"
+         className="button-blue"
           onClick={callPromise1}
         >
           Check Promise1

@@ -28,7 +28,7 @@ function Promise4() {
     <div className="">
       <div className=" ">
         <button
-         className="button-red"
+         className="button-blue"
           onClick={callPromise4}
         >
           Check Promise4

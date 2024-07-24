@@ -16,7 +16,7 @@ function Promise2() {
   return (
     <div className="">
       <div className=" ">
-        <button className="button-red" onClick={callPromise2}>
+        <button className="button-blue" onClick={callPromise2}>
           Check Promise2
         </button>
       </div>
