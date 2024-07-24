@@ -1,5 +1,5 @@
 import Counter from "./react/counter/create/Counter";
-import CreateAxiosRealExample from "./react/fetch/axios/create/CreateAxiosRealExample";
+import CreateAxiosRealExample from "./js/fetch/axios/create/CreateAxiosRealExample";
 import Timer from "./react/timer/create/Timer";
 import TodoList from "./react/todoList/create/TodoList";
 

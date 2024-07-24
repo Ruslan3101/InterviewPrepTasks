@@ -1,4 +1,4 @@
-import { FixAxiosRealExample } from "./react/fetch/axios/fix/FixAxiosRealExample";
+import { FixAxiosRealExample } from "./js/fetch/axios/fix/FixAxiosRealExample";
 import Counter from "./react/counter/fix/Counter";
 import TodoList from "./react/todoList/fix/TodoList";
 import Timer from "./react/timer/fix/Timer";

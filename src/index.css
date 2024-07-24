@@ -11,3 +11,12 @@
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
   }
 }
+
+/* src/styles.css */
+.button-red {
+  @apply border border-solid rounded p-1 shadow-sm bg-red-700 text-white ml-2 w-20 transition duration-300 ease-in-out;
+}
+
+.button-red:hover {
+  @apply bg-red-900;
+}
