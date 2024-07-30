@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { fixComponents } from "./Apps/indexFix";
+import FixCodeMessage from "../shared/ui/FixCodeMessage";
 
 export default function TaskFix() {
   const { task } = useParams<{ task: string }>();
@@ -16,6 +17,7 @@ export default function TaskFix() {
   const TaskComponent = fixComponents[task?.toLowerCase() || ""];
   return (
     <div>
+      <FixCodeMessage />
       <h1 className="text-xl mb-3 font-bold text-gray-600 ">Fix {task} task</h1>
 
       {validateTask() ? <TaskComponent /> : <p>Task component not found</p>}

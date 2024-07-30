@@ -3,7 +3,8 @@ import TodoList from "./react/todoList/answer/TodoList";
 import Timer from "./react/timer/answer/Timer";
 import Promise from "./js/Promise/Promise";
 import DynamicBackground from "./react/dynamicBackground/answer/DynamicBackground";
-import AxiosAPI from "./react/axios/answer/AxiosAPI";
+import AxiosAPI from "./react/dataFetchAxiosAPI/answer/AxiosAPI";
+import DataFetchJSON from "./react/dataFetchJSON/answer/FetchJSON";
 
 type ComponentMap = Record<string, React.ComponentType<any>>;
 export const answerComponents: ComponentMap = {
@@ -13,7 +14,7 @@ export const answerComponents: ComponentMap = {
   todolist: TodoList,
   timer: Timer,
   "dynamic background": DynamicBackground,
-
+  "data fetch json": DataFetchJSON,
   //JS
   promise: Promise,
 };

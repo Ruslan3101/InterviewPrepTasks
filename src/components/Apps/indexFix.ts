@@ -2,7 +2,8 @@ import Counter from "./react/counter/fix/Counter";
 import TodoList from "./react/todoList/fix/TodoList";
 import Timer from "./react/timer/fix/Timer";
 import DynamicBackground from "./react/dynamicBackground/fix/DynamicBackground";
-import { AxiosAPI } from "./react/axios/fix/AxiosAPI";
+import { AxiosAPI } from "./react/dataFetchAxiosAPI/fix/AxiosAPI";
+import DataFetchJSON from "./react/dataFetchJSON/fix/FetchJSON";
 
 type ComponentMap = Record<string, React.ComponentType<any>>;
 export const fixComponents: ComponentMap = {
@@ -11,4 +12,6 @@ export const fixComponents: ComponentMap = {
   todolist: TodoList,
   timer: Timer,
   "dynamic background": DynamicBackground,
+  "data fetch json": DataFetchJSON,
+
 };

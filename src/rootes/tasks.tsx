@@ -20,8 +20,8 @@ const Tasks: React.FC = () => {
       "Timer", //Create a timer that counts down from a specified time.
       "TodoList", //Develop a to-do list application with features to add and remove tasks.
       "Dynamic Background", //Create a component that changes its background color when clicked.
+      "Data Fetch JSON", //Build a component that fetches and displays data from a JSON file in different folder.
       "Data Fetch Axios API", ///Build a component that fetches and displays data from an external API
-      "External Data Fetch JSON", //Build a component that fetches and displays data from an external JSON file.
       "Routing Setup", //Set up a basic routing system using React Router.
       "Random Quote Generation", //Build a component that displays a random quote each time it's rendered.
       "File Uploader", //Develop a file uploader component that allows users to upload images.

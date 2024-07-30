@@ -1,7 +1,7 @@
 import { NavLink, Outlet, useNavigate, useParams } from "react-router-dom";
 
 const Dashboard: React.FC = () => {
-  const languages = ["JavaScript", "React", "CSS", "TypeScript"];
+  const languages = ["React", "JavaScript", "CSS", "TypeScript"];
   const navigate = useNavigate();
 
   const handleHomeClick = () => {

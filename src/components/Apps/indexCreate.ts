@@ -1,7 +1,8 @@
-import AxiosAPI from "./react/axios/create/AxiosAPI";
+import AxiosAPI from "./react/dataFetchAxiosAPI/create/AxiosAPI";
 import Counter from "./react/counter/create/Counter";
 import Timer from "./react/timer/create/Timer";
 import TodoList from "./react/todoList/create/TodoList";
+import DataFetchJSON from "./react/dataFetchJSON/create/FetchJSON";
 
 type ComponentMap = Record<string, React.ComponentType<any>>;
 export const createComponents: ComponentMap = {
@@ -9,4 +10,6 @@ export const createComponents: ComponentMap = {
   counter: Counter,
   todolist: TodoList,
   timer: Timer,
+  "data fetch json": DataFetchJSON,
+
 };

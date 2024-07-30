@@ -1,25 +1,29 @@
 import React, { useState } from "react";
 
-type InputEvent = React.FormEvent<HTMLFormElement>;
+type InputEvent = React.MouseEvent<HTMLButtonElement>;
 type ChangeEvent = React.ChangeEvent<HTMLInputElement>;
 
 interface TodoItem {
   task: string;
   isCompleted: boolean;
 }
+
 const TodoList = () => {
   const [todos, setTodos] = useState<TodoItem[]>([]);
   const [inputValue, setInputValue] = useState("");
+  const [isEditing, setIsEditing] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState<number | null>(null);
 
   const addTodo = (event: InputEvent) => {
-    event?.preventDefault();
+    event.preventDefault();
     if (!inputValue) return false;
     setTodos([...todos, { task: inputValue, isCompleted: false }]);
     setInputValue("");
+    setIsEditing(false);
   };
 
   const inputHandler = (event: ChangeEvent) => {
-    setInputValue(event?.target.value);
+    setInputValue(event.target.value);
   };
 
   const toggleCompletion = (index: number) => {
@@ -33,21 +37,33 @@ const TodoList = () => {
   };
 
   const deleteHandler = (index: number) => {
-    setTodos(todos.filter((todo, i) => i !== index));
+    setTodos(todos.filter((_, i) => i !== index));
   };
 
-  const changeHandler = (index: number) => {
-    setTodos(
-      todos.map((todo, i) =>
-        i === index ? { ...todo, task: inputValue } : todo
-      )
-    );
+  const editHandler = (index: number) => {
+    setInputValue(todos[index].task);
+    setIsEditing(true);
+    setCurrentIndex(index);
+  };
+
+  const updateTodo = (event: InputEvent) => {
+    event.preventDefault();
+    if (currentIndex !== null) {
+      setTodos(
+        todos.map((todo, index) =>
+          index === currentIndex ? { ...todo, task: inputValue } : todo
+        )
+      );
+      setInputValue("");
+      setIsEditing(false);
+      setCurrentIndex(null);
+    }
   };
 
   return (
-    <div className="flex flex-col items-center box-border  h-150 w-200 border-2 rounded">
+    <div className="flex flex-col items-center box-border h-150 w-200 border-2 rounded">
       <h1 className="text-xl font-bold p-3 mb-6">Welcome to Todo List</h1>
-      <form onSubmit={addTodo}>
+      <div className="flex">
         <input
           type="text"
           value={inputValue}
@@ -55,13 +71,23 @@ const TodoList = () => {
           placeholder="Enter Task"
           className="box-border h-3 w-50 p-4 border-2 rounded mr-2"
         />
-        <button type="submit" className="button-blue">
-          Add task
-        </button>
-      </form>
+        {!isEditing ? (
+          <button onClick={addTodo} className="button-blue">
+            Add task
+          </button>
+        ) : (
+          <button
+            className="border rounded p-1 drop-shadow-md hover:bg-[#0ea5e9] bg-[#0284c7] text-white"
+            onClick={updateTodo}
+          >
+            Change
+          </button>
+        )}
+      </div>
+
       <ul className="mb-6">
         {todos.map((todo, index) => (
-          <li key={index} className="flex mt-5 ">
+          <li key={index} className="flex mt-5">
             <span
               className={`mr-2 font-bold ${
                 todo.isCompleted ? "line-through" : ""
@@ -69,7 +95,7 @@ const TodoList = () => {
             >
               {todo.task}
             </span>
-            <div className=" flex justify-items-end">
+            <div className="flex justify-items-end">
               <button
                 className="border rounded p-1 drop-shadow-md hover:bg-[#ef4444] bg-[#b91c1c] text-white ml-2"
                 onClick={() => deleteHandler(index)}
@@ -84,7 +110,7 @@ const TodoList = () => {
               </button>
               <button
                 className="border rounded p-1 drop-shadow-md hover:bg-[#0ea5e9] bg-[#0284c7] text-white"
-                onClick={() => changeHandler(index)}
+                onClick={() => editHandler(index)}
               >
                 Change
               </button>
