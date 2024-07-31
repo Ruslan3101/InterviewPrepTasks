@@ -88,9 +88,22 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
    - Modify or add routes in the `routes/` folder as needed.
 
 4. **Adding New Features**:
+
    - Create a new folder under the appropriate technology in `features/`.
    - Add subfolder (`answer/`, `fix/`, `create/`) and components as required.
    - Update any necessary shared components or routing configurations.
+
+## How to Work with This App
+
+5. **Check the Answer**: First, check the answer in the `Answer` file and understand the code.
+6. **Fix the Code**: Then try to fix the code in the `Fix` file.
+7. **Write a New App**: Finally, begin to write a new app in the `Create` file.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Contribution Guidelines
 
@@ -101,20 +114,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Feel free to reach out if you have any questions or need further clarification on the project structure.
 
-Happy coding!
-
 ## Contact
 
 For any questions, please contact Ruslan at [Email](ruslanlutfullin95@gmail.com)
-
-## How to Work with This App
-
-1. **Check the Answer**: First, check the answer in the `Answer` file and understand the code.
-2. **Fix the Code**: Then try to fix the code in the `Fix` file.
-3. **Write a New App**: Finally, begin to write a new app in the `Create` file.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
