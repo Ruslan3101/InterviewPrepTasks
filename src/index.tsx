@@ -1,32 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
+import "./app/styles/index.css";
+import App from "./app/App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Tasks from "./rootes/tasks";
-import Dashboard from "./rootes/dashboard";
-import ErrorPage from "./rootes/errorPage";
-import TaskFix from "./components/TaskFix";
-import TaskCreate from "./components/TaskCreate";
-import TaskAnswer from "./components/TaskAnswer";
+import Tasks from "./app/routes/tasks";
+import Dashboard from "./app/routes/dashboard";
+import ErrorPage from "./app/routes/errorPage";
+import TaskFix from "./shared/components/taskFix/TaskFixDisplay";
+import TaskCreate from "./shared/components/taskCreate/TaskCreateDisplay";
+import TaskAnswer from "./shared/components/taskAnswer/TaskAnswerDisplay";
 
 const router = createBrowserRouter([
-  // {
-  //   path: "/",
-  //   element: <App />,
-  //   // loader: rootLoader,
-  //   // children: [
-  //   //   {
-  //   //     path: "/tasks",
-  //   //     element: <Tasks />,
-  //   //     // loader: teamLoader,
-  //   //   },
-  //   // ],
-  // },
   {
     path: "/",
-    element: <Dashboard />,
+    element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
