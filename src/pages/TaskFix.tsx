@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { fixComponents } from "./Apps/indexFix";
+import { fixComponents } from "../components/Apps/indexFix";
 import FixCodeMessage from "../shared/ui/FixCodeMessage";
 
 export default function TaskFix() {

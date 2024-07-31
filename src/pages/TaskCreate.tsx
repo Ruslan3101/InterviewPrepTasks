@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { createComponents } from "./Apps/indexCreate";
+import { createComponents } from "../components/Apps/indexCreate";
 export default function TaskCreate() {
   const { task } = useParams<{ task: string }>();
 

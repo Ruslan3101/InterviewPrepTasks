@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { answerComponents } from "./Apps/indexAnswer";
+import { answerComponents } from "../components/Apps/indexAnswer";
 export default function TaskAnswer() {
   const { task } = useParams<{ task: string }>();
 
@@ -12,10 +12,11 @@ export default function TaskAnswer() {
 
   const TaskComponent = answerComponents[task?.toLowerCase() || ""];
 
-
   return (
     <div>
-      <h1 className="text-xl mb-3 font-bold text-gray-600 ">An answer to {task} task</h1>
+      <h1 className="text-xl mb-3 font-bold text-gray-600 ">
+        An answer to {task} task
+      </h1>
 
       {validateTask() ? <TaskComponent /> : <p>Task component not found.</p>}
     </div>

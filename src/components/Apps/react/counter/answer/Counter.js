@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 
-const Counter = () => {
-  const style = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  };
+const Counter: React.FC = () => {
   const [counter, setCounter] = useState(0);
 
   const increment = () => {
@@ -15,11 +10,22 @@ const Counter = () => {
   const decrement = () => {
     setCounter(counter - 1);
   };
+
   return (
-    <div style={style}>
-      <button onClick={decrement}>-</button>
-      <h2 style={{ margin: "0 10px" }}>counter: {counter}</h2>
-      <button onClick={increment}>+</button>
+    <div className="flex items-center justify-center h-96 bg-gray-100">
+      <button
+        onClick={decrement}
+        className="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600"
+      >
+        -
+      </button>
+      <h2 className="mx-4">Counter: {counter}</h2>
+      <button
+        onClick={increment}
+        className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600"
+      >
+        +
+      </button>
     </div>
   );
 };
