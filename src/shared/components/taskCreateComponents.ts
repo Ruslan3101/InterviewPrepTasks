@@ -1,0 +1,18 @@
+import AxiosAPI from "../../features/react/dataFetchAxiosAPI/create/AxiosAPI";
+
+import Timer from "../../features/react/timer/create/Timer";
+import TodoList from "../../features/react/todoList/create/TodoList";
+import DataFetchJSON from "../../features/react/dataFetchJSON/create/FetchJSON";
+import RandomQuoteGeneration from "../../features/react/randomQuoteGeneration/create/RandomQuoteGeneration";
+import Counter from "../../features/react/counter/create/Counter";
+
+type ComponentMap = Record<string, React.ComponentType<any>>;
+
+export const taskCreateComponents: ComponentMap = {
+  "data fetch axios api": AxiosAPI,
+  counter: Counter,
+  todolist: TodoList,
+  timer: Timer,
+  "data fetch json": DataFetchJSON,
+  "random quote generation": RandomQuoteGeneration,
+};
