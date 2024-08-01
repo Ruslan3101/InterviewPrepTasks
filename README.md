@@ -1,10 +1,8 @@
-# FrontEnd-Skill
-
 ## Overview
 
 This project is created to practice FrontEnd hard skills. The main goal is to understand and implement various front-end tasks using React, TypeScript, and other modern web technologies.
 
-Before starting to change the code, please create a new branch with the name of the task you are working on (e.g., `react-todo`).
+Before starting to change the code, please create a new branch with the name of the task you are working on (e.g., `react-todo` or `js-promises` or `css-flexbox`).
 Always pull a new version of the app
 
 ## Features

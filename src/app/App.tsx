@@ -5,7 +5,6 @@ import Dashboard from "./routes/dashboard";
 function App() {
   return (
     <div>
-      {/* <h1>Choose the language</h1> */}
       <Dashboard />
     </div>
   );

@@ -5,6 +5,7 @@ import { AxiosAPI } from "../../features/react/dataFetchAxiosAPI/fix/AxiosAPI";
 import DataFetchJSON from "../../features/react/dataFetchJSON/fix/FetchJSON";
 import RandomQuoteGeneration from "../../features/react/randomQuoteGeneration/fix/RandomQuoteGeneration";
 import Counter from "../../features/react/counter/fix/Counter";
+import FileUploader from "../../features/react/fileUploader/fix/FileUploader";
 
 type ComponentMap = Record<string, React.ComponentType<any>>;
 
@@ -16,4 +17,5 @@ export const taskFixComponents: ComponentMap = {
   "dynamic background": DynamicBackground,
   "data fetch json": DataFetchJSON,
   "random quote generation": RandomQuoteGeneration,
+  "file uploader": FileUploader,
 };

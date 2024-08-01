@@ -5,6 +5,7 @@ import TodoList from "../../features/react/todoList/create/TodoList";
 import DataFetchJSON from "../../features/react/dataFetchJSON/create/FetchJSON";
 import RandomQuoteGeneration from "../../features/react/randomQuoteGeneration/create/RandomQuoteGeneration";
 import Counter from "../../features/react/counter/create/Counter";
+import FileUploader from "../../features/react/fileUploader/create/FileUploader";
 
 type ComponentMap = Record<string, React.ComponentType<any>>;
 
@@ -15,4 +16,5 @@ export const taskCreateComponents: ComponentMap = {
   timer: Timer,
   "data fetch json": DataFetchJSON,
   "random quote generation": RandomQuoteGeneration,
+  "file uploader": FileUploader,
 };
