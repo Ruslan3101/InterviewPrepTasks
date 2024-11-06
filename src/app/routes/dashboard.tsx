@@ -5,7 +5,7 @@ import Timer from "../components/timer/Timer";
 
 const Dashboard: React.FC = () => {
   const languages = ["React", "JavaScript", "CSS", "TypeScript"];
-  const times = ["Stopwatch", "Timer"];
+  const times = ["Timer", "Stopwatch"];
   const navigate = useNavigate();
   const [selectedTime, setSelectedTime] = useState<string | null>(null);
 
@@ -20,7 +20,6 @@ const Dashboard: React.FC = () => {
           <h1 className="text-xl font-bold" onClick={handleHomeClick}>
             Choose the language
           </h1>
-          {/* <button onClick={handleHomeClick}>Go to main</button> */}
 
           <nav className="mt-4">
             {languages.length ? (
@@ -42,7 +41,7 @@ const Dashboard: React.FC = () => {
               </p>
             )}
           </nav>
-          <div className="mt-4 border-solid border-2 border-gray-500 rounded-md">
+          <div className="mt-4">
             <div className="flex justify-center space-x-4 p-3">
               {times.map((time, index) => (
                 <button

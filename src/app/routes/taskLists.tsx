@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, Outlet, useParams } from "react-router-dom";
-import TaskList from "./taskList";
+import TaskList from "./task";
 
 const Tasks: React.FC = () => {
   const tasks = {
@@ -20,6 +20,7 @@ const Tasks: React.FC = () => {
       "Timer", //Create a timer that counts down from a specified time.
       "TodoList", //Develop a to-do list application with features to add and remove tasks.
       "Dynamic Background", //Create a component that changes its background color when clicked.
+      "Fetch Api",
       "Data Fetch JSON", //Build a component that fetches and displays data from a JSON file in different folder.
       "Data Fetch Axios API", ///Build a component that fetches and displays data from an external API
       "Routing Setup", //Set up a basic routing system using React Router.

@@ -6,10 +6,12 @@ import DataFetchJSON from "../../features/react/dataFetchJSON/fix/FetchJSON";
 import RandomQuoteGeneration from "../../features/react/randomQuoteGeneration/fix/RandomQuoteGeneration";
 import Counter from "../../features/react/counter/fix/Counter";
 import FileUploader from "../../features/react/fileUploader/fix/FileUploader";
+import FetchAPI from "../../features/react/dataFetchAPI/fix/dataFetchAPI";
 
 type ComponentMap = Record<string, React.ComponentType<any>>;
 
 export const taskFixComponents: ComponentMap = {
+  "fetch api": FetchAPI,
   "data fetch axios api": AxiosAPI,
   counter: Counter,
   todolist: TodoList,

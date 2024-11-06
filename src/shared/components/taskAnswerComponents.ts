@@ -7,11 +7,14 @@ import DataFetchJSON from "../../features/react/dataFetchJSON/answer/FetchJSON";
 import RandomQuoteGeneration from "../../features/react/randomQuoteGeneration/answer/RandomQuoteGeneration";
 import Counter from "../../features/react/counter/answer/Counter";
 import FileUploader from "../../features/react/fileUploader/answer/FileUploader";
+import FetchAPI from "../../features/react/dataFetchAPI/answer/dataFetchAPI";
+
 
 type ComponentMap = Record<string, React.ComponentType<any>>;
 
 export const taskAnswerComponents: ComponentMap = {
   // React
+  "fetch api": FetchAPI,
   "data fetch axios api": AxiosAPI,
   counter: Counter,
   todolist: TodoList,
@@ -20,6 +23,7 @@ export const taskAnswerComponents: ComponentMap = {
   "data fetch json": DataFetchJSON,
   "random quote generation": RandomQuoteGeneration,
   "file uploader": FileUploader,
+
 
   //JS
   promise: Promise,

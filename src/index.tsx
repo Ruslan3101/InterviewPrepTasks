@@ -4,7 +4,7 @@ import "./app/styles/index.css";
 import App from "./app/App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Tasks from "./app/routes/tasks";
+import Tasks from "./app/routes/taskLists";
 import Dashboard from "./app/routes/dashboard";
 import ErrorPage from "./app/routes/errorPage";
 import TaskFix from "./shared/components/taskFix/TaskFixDisplay";
